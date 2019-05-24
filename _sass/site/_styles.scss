@@ -3,6 +3,7 @@
 //generic
 %body-margin {
     margin-bottom: 100px;
+    margin-top: 20px;
 
 }
 
@@ -46,27 +47,42 @@
 
 //details page
 #details-page {
-
-
     @extend %body-margin;
 
     .subtitle-style {
-        margin: 20px;
-        size: 25%;
+        margin: 30px 0 20px 40px;
+        font-size: 30px;
+        border-bottom: black;
     }
 
-    .image-description {
-        padding: 20px;
+    .description-style {
+        margin: 20px 0;
+        font-size: 15px;
 
-        background-color: #eee9e9;
-
-        .detail-image {}
-
-        .description-style {
+        //only for md < size
+        @media (min-width: 992px) {
             margin: 20px 0;
+
+            p {
+                margin: 20px 0;
+                font-size: 16px;
+            }
 
         }
     }
+
+    .border-container {
+        padding: 50px 20px;
+        background-color: #EAECEE;
+        margin: 0 20px;
+    }
+
+    .img-style {
+        border: 1px solid #696969;
+    }
+
+
+
 }
 
 #about-page {
