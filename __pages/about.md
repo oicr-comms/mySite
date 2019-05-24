@@ -14,6 +14,6 @@ description_txt: |-
 
     All cat and kitten breed information displayed on this site was referenced from <a href="https://cattime.com/cat-breeds">_cattime.com_</a>.
 
-    Thank you for visiting and please share this site with your friends!
+text_txt: Thank you for visiting and please share this site with your friends!
 
 ---

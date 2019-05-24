@@ -17,6 +17,9 @@ layout: default
             <div class="col-xs-12">
                 <div class="about-description">
                     <p>{{page.description_txt | markdownify}}<p>
+                    <div class="last-style lead">
+                        <p><small>{{page.text_txt | markdownify}}</small><p>
+                    </div>
                 </div>
             </div>
         </div>
