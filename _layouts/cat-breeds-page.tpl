@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div id="cat-page">
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="row">
             <div class="col-md-12">
@@ -17,10 +17,12 @@ layout: default
             <div class="col-xs-12">
                 <div class="img-collage">
                     {% for item in page.images_list %}
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 img-item">  
-                            <a href="{{item.link_txt}}">
-                                <img src="{{item.img_txt}}" class="img-responsive img-thumbnail center-block">
-                            </a>
+                        <div class="col-md-4 col-sm-6 col-xs-12">  
+                            <div class="img-item">
+                                <a href="{{item.link_txt}}">
+                                    <img src="{{item.img_txt}}" class="img-responsive img-thumbnail center-block">
+                                </a>
+                            </div>
                         </div>
                     {% endfor %}
                 </div>
