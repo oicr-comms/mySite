@@ -1,6 +1,6 @@
  <footer class="footer">
     <div class="container">
-        <p class="text-muted">2019 Website made by Amy</p>
+        <p class="text-muted">2019 Cat Website created by A.M.</p>
     </div>
 </footer>
 

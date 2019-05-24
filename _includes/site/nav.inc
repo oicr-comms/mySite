@@ -6,8 +6,7 @@
         <li><a href="/cats/">Cat Breeds</a></li>
         <li><a href="/about/">About</a></li>
       </ul>
-    
-
+  
   </div>
 </nav>
 
