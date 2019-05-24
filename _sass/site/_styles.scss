@@ -1,0 +1,82 @@
+/*------------styling-----------------*/
+
+//generic
+
+.title-style {
+    margin: 10px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #B0E0E6;
+    padding: 40px 20px 10px 20px;
+
+}
+
+//homepage
+#home-page {
+    .banner {
+        margin: 30px 0 20px 0;
+    }
+
+    margin-bottom: 80px;
+    
+ 
+}
+
+//cat page
+#cat-page {
+    margin-bottom: 80px;
+
+    .img-collage {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .img-item {
+            padding: 10px;
+    
+        }
+    }
+}
+
+//details page
+#details-page {
+    margin: 20px; 
+    margin-bottom: 80px;
+
+   
+
+    .subtitle-style {
+        margin: 10px 0 20px 0;
+        size: 25%;
+    }
+    .image-description {
+        padding: 20px;
+
+        background-color: #eee9e9;
+
+        .detail-image {
+           
+        }
+        .description-style {
+            margin: 20px 0;
+
+
+         
+        }
+
+    }
+
+   
+}
+
+#about-page {
+    .about-description {
+        margin: 10px 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+     }
+}

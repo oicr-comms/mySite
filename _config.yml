@@ -19,15 +19,13 @@
 ######################################################################
 
 # Global Site Title
-title: Get Started
+title:             Translational Genomics Laboratory
 
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description:       > # this means to ignore newlines until "baseurl:"
+  TGL enhances rapid access to genomics technologies, and facilitates genomic interpretation and reporting in clinical oncology.
 
 # Contact Information
-email: webdev@oicr.on.ca
+email:             dax.torti@oicr.on.ca
 
 # the subpath of your site, e.g. /blog
 baseurl: ""
@@ -60,10 +58,14 @@ collections:
     output: true
   _emailtpl:
     output: false
+  _members:
+    output: false
+  _publications:
+    output: false
   _banner:
     output: true
-  # Custom Collections
-  _abstracts:
+  # Custom collections
+  _cats:
     output: true
 
 defaults:
@@ -126,58 +128,59 @@ defaults:
       published: true
   - scope:
       path: ""
+      type: "members"
+    values:
+      title: Team | OICR Labs
+    required: 
+      - firstName_txt
+      - lastName_txt
+      - group_txt
+      - order
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      title: Publications | OICR Labs
+    required: 
+      - title_txt
+      - publicationType_txt
+  - scope:
+      path: ""
       type: _banner
     values:
       layout: banner
-# Custom collections
-  # ABSTRACTS
+#Custom collections
+  #BREEDS
   - scope:
-      path: ''
-      type: _abstracts
+      path: "" # an empty string here means all files in the project
+      type: _cats
     values:
-      title: ''
-      author: ''
-      layout: abstract_details
-      permalink: '/abstracts/:name/'
+      title: ""
+      author: ""
+      layout: cats
+      permalink: "/cats/:name/"
       published: true
       isPublic_b: true
-      tabTitle_txt: 'Abstract Details'
-      posternumber_ti: ''
-      categories_list:
-        - category_txt: ''
-      keywords_txt: ''
-      authors_list:
-        - authors_txt: ''
-          reference: ''
-      affiliations_list:
-        - affiliation_txt: ''
-          reference: ''
-      presenting-author_txt: ''
-      presenting-author-email_txt: ''
-      presenting-author-title_txt: ''
-      text_txt: ''
-    required: []
-    validate: {}
-    labels:
+      image_img: ""
+      breed_txt: ""
+      hairType_txt: ""
+      trait_txt: ""
+      playfullness_txt: ""
+      intelligence_txt: ""
+    labels: 
       title: Title
       author: Author
       layout: Layout
       permalink: Permanent Link
       published: Published
       isPublic_b: Public
-      tabTitle_txt: Tab Title
-      posternumber_ti: Poster Number
-      categories_list: Category List
-      categories_list.category_txt: Category List Item
-      keywords_txt: Keywords
-      authors_list: List of Authors
-      authors_list.author_txt: Author
-      affiliations_list: List of Affiliations
-      affiliations_list.affiliation_txt: Author Affiliation
-      presenting-author_txt: Presenting Author Name
-      presenting-author-email_txt: Presenting Author Email
-      presenting-author-title_txt: Presenting Author Title
-      text_txt: Abstract Text
+      image_img: Picture
+      breed_txt: Cat Breed Name
+      hairType_txt: Hair Type
+      trait_txt: Defining Trait
+      playfullness_txt: Playfullness Level
+      intelligence_txt: Intelligence Level
+
 
 ######################################################################
 # Jekyll Environment Config
@@ -206,6 +209,7 @@ exclude:
   - start.sh
   - start-build.sh
   - start-preview.sh
+  - baseline-update
 
 theme: jekyll-theme-minimal
 
