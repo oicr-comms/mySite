@@ -7,6 +7,7 @@
 
     <div id="main-website-area">
         {% include site/nav.inc %}
+        {% include site/breadcrumbs.inc %}
         <div id="editButton" data-path="{{ page.path }}" data-is-public="{{ page.isPublic_b }}"></div>
         <div id="public-pages">
             {% include core/token_replace.inc content=content %}

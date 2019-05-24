@@ -1,9 +1,13 @@
 /*------------styling-----------------*/
 
 //generic
+%body-margin {
+    margin-bottom: 100px;
+
+}
 
 .title-style {
-    margin: 10px;
+    margin-top: 20px;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -12,20 +16,19 @@
 
 }
 
+
 //homepage
 #home-page {
+    @extend %body-margin;
+
     .banner {
         margin: 30px 0 20px 0;
     }
-
-    margin-bottom: 80px;
-    
- 
 }
 
 //cat page
 #cat-page {
-    margin-bottom: 80px;
+    @extend %body-margin;
 
     .img-collage {
         padding: 20px;
@@ -36,47 +39,42 @@
 
         .img-item {
             padding: 10px;
-    
+
         }
     }
 }
 
 //details page
 #details-page {
-    margin: 20px; 
-    margin-bottom: 80px;
 
-   
+
+    @extend %body-margin;
 
     .subtitle-style {
-        margin: 10px 0 20px 0;
+        margin: 20px;
         size: 25%;
     }
+
     .image-description {
         padding: 20px;
 
         background-color: #eee9e9;
 
-        .detail-image {
-           
-        }
+        .detail-image {}
+
         .description-style {
             margin: 20px 0;
 
-
-         
         }
-
     }
-
-   
 }
 
 #about-page {
+    @extend %body-margin;
+
     .about-description {
         margin: 10px 20px;
         display: flex;
         flex-wrap: wrap;
-
-     }
+    }
 }

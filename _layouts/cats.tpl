@@ -6,6 +6,14 @@ layout: default
     <div class="container">
 
         <div class="row">
+            <div class="col-xs-12">
+                <div class="title-style">
+                    <h1>Cat Breed Details</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
             <div clas="col-xs-12">
                 <div class="subtitle-style">
                     <h2>{{page.breed_txt}}</h2>

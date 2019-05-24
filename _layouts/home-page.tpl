@@ -25,9 +25,9 @@ layout: default
             <div class="col-xs-10 col-xs-offset-1">
                 <div class="text-center">
                     <div class="lead">
-                        <p>This website is dedicated to nine different cat breed clasifications, in honour of the nine lives of cats.</p>
+                        <p>{{page.description_txt}}</p>
                     </div>
-                    <p><small>Navigate to the <em>Cat Breeds</em> section of the website for more details.</small></p>
+                    <p><small>{{page.text_txt | markdownify}}</small></p>
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@ images_list:
   - img_txt: /assets/site/images/abyssinian.jpg
     link_txt: /cats/abyssinian/
   - img_txt: /assets/site/images/american-shorthair.png
-    link_txt: /cats/american-shorhair/
+    link_txt: /cats/american-shorthair/
   - img_txt: /assets/site/images/bombay.jpg
     link_txt: /cats/bombay/
   - img_txt: /assets/site/images/chartreux.jpg
