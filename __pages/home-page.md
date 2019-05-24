@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: home-page
-permalink: /home/
+permalink: /
 published: true
 isPublic_b: true
 
