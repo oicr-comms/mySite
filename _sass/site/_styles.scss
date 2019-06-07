@@ -1,0 +1,112 @@
+/*------------styling-----------------*/
+
+//generic
+%body-margin {
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.title-style {
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #B0E0E6;
+    padding: 40px 20px 10px 20px;
+}
+
+
+//homepage
+#home-page {
+    @extend %body-margin;
+
+    .banner {
+        margin: 30px 0 20px 0;
+    }
+}
+
+//cat breeds page
+#cat-page {
+    @extend %body-margin;
+
+    .img-collage {
+        margin: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .img-style {
+            padding: 10px;
+            margin: 10px;
+            background-color: #DCDCDC;
+
+            object-fit: cover;
+
+        }
+    }
+}
+
+//cat details page
+#details-page {
+    @extend %body-margin;
+
+    .subtitle-style {
+        margin: 30px 0 20px 40px;
+        font-size: 30px;
+        border-bottom: black;
+    }
+
+    .description-style {
+        margin: 20px 0;
+        font-size: 15px;
+
+        //only for md < size
+        @media (min-width: 992px) {
+            margin: 20px 0;
+
+            p {
+                margin: 20px 0;
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    .border-container {
+        padding: 50px 20px;
+        background-color: #D3D3D3;
+        margin: 0 20px;
+    }
+
+    .img-style {
+        @media (min-width: 992px) {
+            border: 1px solid #696969;
+        }
+    }
+
+
+
+}
+
+#about-page {
+    @extend %body-margin;
+
+    .about-description {
+        margin: 40px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 35px;
+
+        p {
+            margin: 15px 0;
+        }
+
+        .last-style {
+            margin: 25px 0;
+            color: #F08080;
+        }
+    }
+
+
+}
