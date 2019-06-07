@@ -1,8 +1,8 @@
-<footer class="site-footer">
+ <footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-            </div>
-        </div>
+        <p class="text-muted">2019 Cat Website</p>
     </div>
 </footer>
+
+
+<!-- https://getbootstrap.com/docs/4.1/examples/sticky-footer/ -->
