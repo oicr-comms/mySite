@@ -1,5 +1,5 @@
 var $grid = $('.grid').isotope({
-  itemSelector: '.color-shape'
+  itemSelector: '.blob'
 });
 
 // store filter for each group
