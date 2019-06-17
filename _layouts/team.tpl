@@ -2,12 +2,6 @@
 layout: default
 ---
 
-{% assign membersData = site._members %}
-{% assign pubs = site._publications %}
-
-<div id="teamPage" class="page">
-    <div class="container">
-
 <h1>Isotope - combination filters</h1>
 
 <div class="filters">
@@ -69,9 +63,5 @@ layout: default
   <div class="color-shape tall square red"></div>
   <div class="color-shape tall square blue"></div>
   <div class="color-shape tall square yellow"></div>
-</div>
-
-
-    </div>
 </div>
 

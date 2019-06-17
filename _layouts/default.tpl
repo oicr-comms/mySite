@@ -14,7 +14,7 @@
         </div>
         {% include site/footer.inc position='bottom' %}
     </div>
-    {% include site/footer_scripts2.inc %}
+    {% include site/footer_scripts.inc %}
     {% include dist/footer_scripts.inc %}
 </body>
 </html>

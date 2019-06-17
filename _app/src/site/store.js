@@ -3,11 +3,17 @@ import { Forms, Search, Publications } from 'oicr-ui-core';
 import coreReducers from '../core/reducers';
 import coreMiddlewares from '../core/middlewares';
 
+import { categoryFilterReducer} from './reducers';
+
 const initialState = {
     // Initial Values
 };
 
-const combinedReducers = combineReducers(Object.assign({}, coreReducers, {}));
+const combinedReducers = combineReducers(
+    Object.assign({}, coreReducers, {
+        categoryFilter: categoryFilterReducer,
+    }),
+);
 
 const composedMiddlewares = compose(
     applyMiddleware(...coreMiddlewares),

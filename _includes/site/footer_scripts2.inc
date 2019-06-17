@@ -8,5 +8,4 @@
 <!-- JavaScript -->
 <script type="text/javascript" src="/assets/site/js/isotope.pkgd.min.js"></script>
 <script type="text/javascript" src="/assets/core/js/app_default.js"></script>
-<!-- <script type="text/javascript" src="/assets/site/js/test.js"></script> -->
 <script type="text/javascript" src="/assets/site/js/test2.js"></script>
