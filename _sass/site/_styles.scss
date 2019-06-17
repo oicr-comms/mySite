@@ -388,6 +388,38 @@ body {
         margin: 30px 0 20px 0;
     }
 }
+//dog breeds page
+#dog-page {
+  @extend %body-margin;
+  #dogs-container {
+    .search-container {
+      .wfui-filters-item {
+        .input-clear {
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+
+  .img-collage {
+      margin: 40px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .img-style {
+          padding: 10px;
+          margin: 10px;
+          background-color: #DCDCDC;
+
+          object-fit: cover;
+
+      }
+  }
+}
+
+
 
 //cat breeds page
 #cat-page {

@@ -8,6 +8,8 @@ import { attributesSelector } from 'oicr-ui-core/lib/core/selectors';
 
 import Abstracts from './modules/Abstracts/AbstractsContainer';
 
+import Dogs from './modules/Dogs/DogsContainer';
+
 import store from './store';
 
 const { getPageContent } = Core.actions;
@@ -30,5 +32,26 @@ if (targetAbstracts) {
             </Router>
         </CoreProvider>,
         targetAbstracts
+    );
+}
+
+const targetDogs = document.getElementById('dogs-container');
+if (targetDogs) {
+    // Get Dogs
+    getContents('{"type":"dogs"}')(store.dispatch);
+    getPageContent('__pages/dog-breeds.md')(store.dispatch);
+
+    ReactDOM.render(
+        <CoreProvider
+            store={store}
+            selector={state =>
+                attributesSelector(['__pages/dog-breeds.md'])(state)
+            }
+        >
+            <Router history={hashHistory}>
+                <Route path="/" component={Dogs} />
+            </Router>
+        </CoreProvider>,
+        targetDogs
     );
 }

@@ -16,7 +16,8 @@ layout: default2
   <div class="blob"></div>
 </div>
 
-<div id="cat-page">
+<div id="dog-page">
+    <div id="dogs-container"> </div>
     <div class="container">
 
         <div class="row">

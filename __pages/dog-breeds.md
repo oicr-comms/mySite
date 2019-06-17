@@ -7,6 +7,15 @@ isPublic_b: true
 
 title_txt: Dog Breeds
 
+search_txt: Search Doggos
+
+filterTypes_list:
+  - title_txt: "Filter by Category:"
+    filters_list:
+      - filter_txt: Good Doggo
+      - filter_txt: Gooder Doggo
+      - filter_txt: Goodest Doggo
+
 images_list:
   - img_txt: /assets/site/images/1.jpg
     link_txt: /dogs/1/
