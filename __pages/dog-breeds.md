@@ -26,10 +26,4 @@ images_list:
   - img_txt: /assets/site/images/4.jpg
     link_txt: /dogs/4/
 
-filter_list:
-  - filter_txt: 1
-  - filter_txt: 2
-  - filter_txt: 3
-  - filter_txt: 4
-
 ---
